@@ -3,7 +3,9 @@
 
 
 Osio 05  Join harjoitukset:
+
 5.1
+
 select country.name as "country name", airport.name as "airport name"
     -> from country inner join airport on airport.iso_country = country.iso_country
     -> where country.name = "Finland" and airport.scheduled_service = "yes";
@@ -13,6 +15,7 @@ select country.name as "country name", airport.name as "airport name"
 
 
 5.2
+
 select game.screen_name, airport.name
     -> from game
     -> inner join airport on game.location = airport.ident;
@@ -21,6 +24,7 @@ select game.screen_name, airport.name
 
 
 5.3
+
 select game.screen_name, country.name
     -> from game
     -> inner join airport on game.location = airport.ident
@@ -30,6 +34,7 @@ select game.screen_name, country.name
 
 
 5.4
+
 select airport.name, game.screen_name
     -> from game
     -> right join airport on game.location = airport.ident
