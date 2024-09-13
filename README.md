@@ -1,6 +1,124 @@
 # Tietokannat, Ohjelmisto 1
 
 
+Osio 04 Where-osan liitosehto:
+
+4.1
+
+select country.name as "country name", airport.name as "airport name"
+from country, airport
+where country.name = "Iceland"
+and airport.iso_country = country.iso_country;
+
+![4 1](https://github.com/user-attachments/assets/1072b3da-6312-43d8-8f07-26e5a06eadfe)
+
+![4 1 2](https://github.com/user-attachments/assets/aace7a1a-cf56-4db6-9d74-2449a2a9e47b)
+
+
+
+4.2
+
+select airport.name as "airport name" 
+from airport, country
+where country.name = "France"
+and airport.iso_country = country.iso_country
+and airport.type = "large_airport";
+
+![4 2](https://github.com/user-attachments/assets/0b61f7f8-1266-4ff6-828a-0d9d731d3bce)
+
+
+4.3
+
+
+select country.name as country_name, airport.name as airport_name
+from country, airport
+where country.continent = "AN"
+and airport.iso_country = country.iso_country;
+
+![4 3](https://github.com/user-attachments/assets/59cd7139-4259-4f47-90c6-258e6f5768d3)
+
+![4 3 2](https://github.com/user-attachments/assets/486a64a8-a6aa-4c08-b1b4-76c5a3a58404)
+
+
+4.4
+
+select airport.elevation_ft
+from airport, game
+where game.screen_name = "Heini"
+and airport.ident = game.location;
+
+![4 4](https://github.com/user-attachments/assets/0e957086-5640-4fae-90de-042433776ad2)
+
+
+4.5
+
+select airport.elevation_ft * 0.3048 as elevation_m
+from airport, game
+where game.screen_name = "Heini"
+and airport.ident = game.location;
+
+![4 5](https://github.com/user-attachments/assets/da708b41-c4c4-470c-8138-95e734901667)
+
+
+4.6
+
+select airport.name
+from airport, game
+where game.screen_name = "Ilkka"
+and airport.ident = game.location;
+
+![4 6](https://github.com/user-attachments/assets/4cdb520a-2bbf-40b5-8e5f-e660c538e238)
+
+
+4.7
+
+select country.name
+from country, airport, game
+where game.screen_name = "Ilkka"
+and country.iso_country = airport.iso_country
+and airport.ident = game.location;
+
+![4 7](https://github.com/user-attachments/assets/222f0099-9fbb-4063-905c-b3760cf785ae)
+
+
+4.8
+
+select goal.name
+from goal, game, goal_reached
+where game.screen_name = "Heini"
+and goal.id = goal_reached.goal_id
+and goal_reached.game_id = game.id;
+
+![4 8](https://github.com/user-attachments/assets/7f5dedaf-3105-4599-852c-a53d164f2adf)
+
+
+4.9
+
+select airport.name
+from airport, game, goal, goal_reached
+where goal.name = "CLOUDS" and game.screen_name = "Ilkka"
+and airport.ident = game.location
+and game.id = goal_reached.game_id
+and goal_reached.goal_id = goal.id;
+
+![4 9](https://github.com/user-attachments/assets/9b303222-0d7d-4c25-acdc-706b2e4dcd4f)
+
+
+
+4.10
+
+select country.name
+from country, game, goal, goal_reached, airport
+where goal.name = "CLOUDS" and game.screen_name = "Ilkka"
+and airport.ident = game.location
+and game.id = goal_reached.game_id
+and goal_reached.goal_id = goal.id
+and country.iso_country = airport.iso_country;
+
+![4 10](https://github.com/user-attachments/assets/acc83c11-2974-4617-a9c9-25b38a5f8244)
+
+
+
 
 Osio 05  Join harjoitukset:
 
