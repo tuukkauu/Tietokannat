@@ -43,5 +43,15 @@ select airport.name, game.screen_name
 ![5 4](https://github.com/user-attachments/assets/d28c5e47-52b8-4767-b93a-5d7951f44e3b)
 
 
+5.5
+
+SELECT goal.name, game.screen_name
+    -> FROM goal_reached
+    -> LEFT JOIN game ON goal_reached.game_id = game.id
+    -> RIGHT JOIN goal ON goal_reached.goal_id = goal.id;
+
+![5 5](https://github.com/user-attachments/assets/a7daa3e5-2883-4de4-9e6b-c0e0dbcd6c20)
+
+
 
 
