@@ -30,6 +30,7 @@ select airport.name, game.screen_name
     -> from game
     -> right join airport on game.location = airport.ident
     -> where airport.name like "%Hels%";
+
 ![5 4](https://github.com/user-attachments/assets/d28c5e47-52b8-4767-b93a-5d7951f44e3b)
 
 
