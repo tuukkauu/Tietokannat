@@ -81,7 +81,7 @@ SELECT distinct co2_budget FROM game;
 
 
 
-Osio 04 Where-osan liitosehto:
+#Osio 04 Where-osan liitosehto:
 
 4.1
 
