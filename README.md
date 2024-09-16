@@ -251,5 +251,28 @@ SELECT goal.name, game.screen_name
 ![5 5](https://github.com/user-attachments/assets/a7daa3e5-2883-4de4-9e6b-c0e0dbcd6c20)
 
 
+# Osio 06  Sisäkyselyt
+
+6.1
+
+SELECT name 
+FROM country 
+WHERE iso_country in(
+			SELECT iso_country
+			FROM airport
+			WHERE name in(
+						SELECT name
+						FROM airport
+						WHERE name like "%Satsuma%"
+						)
+			);
+
+![6 1](https://github.com/user-attachments/assets/ffc22e24-5b2e-42bb-9752-44ad265d4ff5)
+
+
+6.2
+
+
+
 
 
