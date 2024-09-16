@@ -1,5 +1,85 @@
 # Tietokannat, Ohjelmisto 1
 
+Osio 03 Yhteen tauluun kohdistuvien kyselyiden harjoitukset
+
+3.1
+
+select * from goal;
+
+![3 1](https://github.com/user-attachments/assets/fac41f2c-2d10-4ef8-b294-20d51f0f8c94)
+
+
+3.2
+
+SELECT airport.name, airport.type FROM airport WHERE airport.iso_country = "FI";
+
+![3 2](https://github.com/user-attachments/assets/d056229f-3f2a-43b4-8a56-11e564ef5947)
+
+
+3.3
+
+SELECT airport.name 
+FROM airport 
+WHERE airport.iso_country like "%FI%" 
+ORDER by name asc;
+
+![3 3](https://github.com/user-attachments/assets/443ad4db-69d8-47e5-b737-f36cb959da4c)
+
+
+3.4
+
+SELECT airport.name, airport.type
+FROM airport
+WHERE airport.iso_country = "FI"
+ORDER BY type, name;
+
+![3 4](https://github.com/user-attachments/assets/22c4fe40-a1a5-4940-9d47-b20d9f9462a7)
+
+
+3.5
+
+SELECT name
+FROM country
+WHERE name LIKE "F%";
+
+![3 5](https://github.com/user-attachments/assets/e98203d3-42ce-417e-b9a2-431d11d89a87)
+
+
+3.6
+
+SELECT name
+FROM country
+WHERE name LIKE "%F%";
+
+![3 6](https://github.com/user-attachments/assets/613f85ac-f596-4df0-a9c3-3dfa2f98f793)
+
+
+3.7
+
+SELECT location
+FROM game
+WHERE screen_name = "Vesa";
+
+![3 7](https://github.com/user-attachments/assets/afede980-5131-494f-a135-bb80bbeb23cb)
+
+
+3.8
+
+SELECT co2_consumed
+FROM game
+WHERE screen_name ="Ilkka";
+
+![3 8](https://github.com/user-attachments/assets/b0f4adde-0f07-4a6f-b2db-f40f076c9ac5)
+
+
+3.9
+
+SELECT distinct co2_budget FROM game;
+
+![3 9](https://github.com/user-attachments/assets/c8a2dd0d-6080-4ce3-b948-d2bfc82f14a5)
+
+
+
 
 Osio 04 Where-osan liitosehto:
 
