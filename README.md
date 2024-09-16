@@ -200,7 +200,7 @@ and country.iso_country = airport.iso_country;
 
 
 
-Osio 05  Join harjoitukset:
+# Osio 05  Join harjoitukset:
 
 5.1
 
