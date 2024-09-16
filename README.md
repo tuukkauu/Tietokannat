@@ -251,7 +251,7 @@ SELECT goal.name, game.screen_name
 ![5 5](https://github.com/user-attachments/assets/a7daa3e5-2883-4de4-9e6b-c0e0dbcd6c20)
 
 
-# Osio 06  Sisäkyselyt
+# Osio 06  Sisäkyselyt:
 
 6.1
 
@@ -283,6 +283,21 @@ WHERE iso_country in(SELECT iso_country
 
 
 6.3
+
+select screen_name
+from game
+where id in(SELECT game_id
+			from goal_reached
+			where goal_id in(select id
+							from goal
+							where name = "CLOUDS"
+							)
+			);
+
+![6 3](https://github.com/user-attachments/assets/be9a5ed8-ee18-4e31-91ff-2c9e6c67a48f)
+
+6.4
+
 
 
 
