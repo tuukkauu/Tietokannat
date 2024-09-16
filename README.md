@@ -272,6 +272,20 @@ WHERE iso_country in(
 
 6.2
 
+SELECT name
+FROM airport
+WHERE iso_country in(SELECT iso_country
+					FROM country
+					WHERE name = "Monaco"
+					);
+
+![6 2](https://github.com/user-attachments/assets/95d35ed2-90ed-40c2-8b29-0b67e92f71a2)
+
+
+6.3
+
+
+
 
 
 
