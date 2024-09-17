@@ -329,6 +329,47 @@ where goal.id not in(select goal_id
 
 # Osio 07 Koostetietokyselyt:
 
+7.1
+
+select max(elevation_ft)
+from airport;
+
+![7 1](https://github.com/user-attachments/assets/5be9b9d4-cd23-45ab-8495-21a94559fa09)
+
+
+7.2
+
+select continent, count(*)
+from country
+group by continent;
+
+![7 2](https://github.com/user-attachments/assets/22defca7-29f7-4bcf-bf06-720e138541b8)
+
+
+7.3
+
+select game.screen_name, count(*)
+from game
+join goal_reached on game.id = goal_reached.game_id
+join goal on goal.id = goal_reached.goal_id
+group by game.screen_name;
+
+![7 3](https://github.com/user-attachments/assets/2847e905-577c-4f9e-80f2-a32b238f4a1b)
+
+
+7.4
+
+select screen_name
+from game
+where co2_consumed in(select min(co2_consumed)
+				from game
+				);
+
+![7 4](https://github.com/user-attachments/assets/3f5bfb90-c183-48fe-a6dd-78098b7bc1ad)
+
+
+7.5
+
 
 
 
