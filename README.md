@@ -296,6 +296,7 @@ where id in(SELECT game_id
 
 ![6 3](https://github.com/user-attachments/assets/be9a5ed8-ee18-4e31-91ff-2c9e6c67a48f)
 
+
 6.4
 
 select name
@@ -306,8 +307,23 @@ where iso_country not in(select iso_country
 
 ![6 4](https://github.com/user-attachments/assets/a4c44a0a-b6c3-48ce-8311-cc8aa991ab9d)
 
+
 6.5
 
+select name
+from goal
+where goal.id not in(select goal_id
+				from goal_reached
+				where game_id in(select game.id
+								from game
+								where screen_name in(select screen_name
+														from game
+														where screen_name = "Heini"
+														)
+									)
+				);
+
+![6 5](https://github.com/user-attachments/assets/fb910810-e89d-4590-8d3d-e11ce5421228)
 
 
 
