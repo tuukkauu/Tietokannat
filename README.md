@@ -298,6 +298,18 @@ where id in(SELECT game_id
 
 6.4
 
+select name
+from country
+where iso_country not in(select iso_country
+				from airport
+			);
+
+![6 4](https://github.com/user-attachments/assets/a4c44a0a-b6c3-48ce-8311-cc8aa991ab9d)
+
+6.5
+
+
+
 
 
 
