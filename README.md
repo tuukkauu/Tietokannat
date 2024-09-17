@@ -370,6 +370,75 @@ where co2_consumed in(select min(co2_consumed)
 
 7.5
 
+SELECT country.name, COUNT(*)
+FROM country
+JOIN airport ON country.iso_country = airport.iso_country
+GROUP BY country.name
+ORDER BY count(airport.name) DESC
+LIMIT 50;
+
+![7 5](https://github.com/user-attachments/assets/e13cf501-cd72-4e75-8c72-14e7e514c0e8)
+
+
+7.6
+
+SELECT country.name
+FROM country
+JOIN airport ON country.iso_country = airport.iso_country
+GROUP BY country.iso_country
+HAVING COUNT(*) > 1000;
+
+![7 6](https://github.com/user-attachments/assets/c9d43bca-4ec4-44db-8936-7abae3e8f4dc)
+
+
+7.7
+
+SELECT name
+FROM airport
+WHERE elevation_ft = (SELECT MAX(elevation_ft) FROM airport);
+
+![7 7](https://github.com/user-attachments/assets/141a1118-a485-48ca-9895-f506c33b6e38)
+
+
+7.8
+
+SELECT country.name
+FROM country
+JOIN airport ON airport.iso_country = country.iso_country
+WHERE airport.elevation_ft = (SELECT MAX(elevation_ft) FROM airport);
+
+![7 8](https://github.com/user-attachments/assets/28b24f3b-dc9b-4443-b683-f82181ea0de4)
+
+
+7.9
+
+select count(*)
+from goal
+where goal.id in (select goal_id
+				from goal_reached
+				where game_id in (select game.id
+								from game
+								where screen_name = "Vesa"
+								)
+				);
+
+![7 9](https://github.com/user-attachments/assets/e63befb8-8d35-4521-a0dd-0e07a870d6af)
+
+
+7.10
+
+SELECT name
+FROM airport
+WHERE latitude_deg = (
+    SELECT MIN(latitude_deg)
+    FROM airport
+);
+
+![7 10](https://github.com/user-attachments/assets/23a8d73d-ea5d-42ec-af5b-692f86d23b1d)
+
+
+
+
 
 
 
