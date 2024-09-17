@@ -327,6 +327,8 @@ where goal.id not in(select goal_id
 
 
 
+# Osio 07 Koostetietokyselyt:
+
 
 
 
