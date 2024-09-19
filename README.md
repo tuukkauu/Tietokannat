@@ -438,6 +438,61 @@ WHERE latitude_deg = (
 
 
 
+# Osio 08 Päivityskyselyt:
+
+
+8.1
+
+update game
+set location = (select ident
+				from airport
+				where name = "Nottingham Airport"
+				),
+				co2_consumed = co2_consumed + 500
+where screen_name = "Vesa";
+
+![8 1](https://github.com/user-attachments/assets/17100278-1415-4e4d-bd0e-b2db84bb826c)
+
+
+8.2
+
+delete from goal_reached
+where game_id in ( select id
+		from game
+		);
+			
+delete from goal_reached
+where goal_id in ( select id 
+		from goal
+		);
+
+select * from goal_reached;
+
+![8 2](https://github.com/user-attachments/assets/36f5a9b1-15a5-47e6-b457-e2f1cdff50ec)
+
+
+8.3
+
+![8 3](https://github.com/user-attachments/assets/6bb4566c-f893-4b45-88ce-efa772d0e17a)
+
+
+8.4
+
+select from game where id = "1";
+
+delete from game where id = "2";
+
+delete from game where id = "3";
+
+select * from game;
+
+![8 41](https://github.com/user-attachments/assets/84c019e9-795f-499c-9b59-f4ea15fc5841)
+
+![8 42](https://github.com/user-attachments/assets/a7518901-5b44-4dc0-9519-e40acf5bf487)
+
+
+
+
 
 
 
