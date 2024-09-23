@@ -520,7 +520,8 @@ select * from game;
 
 ![Kaikki1](https://github.com/user-attachments/assets/92d85283-f79b-423f-9ffa-287186c73520)
 
-![Kaikki2](https://github.com/user-attachments/assets/2d4f9729-6733-4af9-a6a0-96c5fb69a9c4)
+![Kaikki2](https://github.com/user-attachments/assets/209e9151-164e-496b-a482-8aa59036a107)
+
 
 
 
