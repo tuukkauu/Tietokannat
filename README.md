@@ -493,6 +493,33 @@ select * from game;
 
 
 
+# Osio 09 Tietokannan suunnittelu:
+
+9.1
+
+![9 1](https://github.com/user-attachments/assets/cf16a990-65c0-437a-9264-0a9d02a04ad2)
+
+
+9.2
+
+![9 2](https://github.com/user-attachments/assets/e76fe8eb-a14a-4b17-b342-26e762b5f2db)
+
+
+9.10
+
+![9 10](https://github.com/user-attachments/assets/4e2a3b1f-64da-4d36-a20c-28d53a5daa82)
+
+
+09 tentti kokonaisuudessaan:
+
+![9](https://github.com/user-attachments/assets/1fcd285e-4951-476a-8d69-95bb7fe77154)
+
+
+
+
+
+
+
 
 
 
