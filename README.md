@@ -1,6 +1,13 @@
 # Tietokannat, Ohjelmisto 1
 
-Osio 03 Yhteen tauluun kohdistuvien kyselyiden harjoitukset
+
+# Osio 02:
+
+![2 0](https://github.com/user-attachments/assets/353e2ea3-f2d6-4898-bd81-a67ffb6aa255)
+
+
+
+# Osio 03 Yhteen tauluun kohdistuvien kyselyiden harjoitukset
 
 3.1
 
