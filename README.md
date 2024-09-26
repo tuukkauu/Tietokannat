@@ -7,7 +7,7 @@
 
 
 
-# Osio 03 Yhteen tauluun kohdistuvien kyselyiden harjoitukset
+# Osio 03 Yhteen tauluun kohdistuvien kyselyiden harjoitukset:
 
 3.1
 
